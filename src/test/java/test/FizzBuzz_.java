@@ -34,6 +34,12 @@ public class FizzBuzz_ {
         assertThat(fizzBuzz.of(10)).isEqualTo("Buzz");
     }
 
+    @Test
+    public void should_return_fizzbuzz_when_it_is_multiple_of_15() {
+        assertThat(fizzBuzz.of(15)).isEqualTo("FizzBuzz");
+        assertThat(fizzBuzz.of(30)).isEqualTo("FizzBuzz");
+    }
+
     public class FizzBuzz {
         public String of(int number) {
             return isMultipleOfFive(number) ? "Buzz": isMultipleOfThree(number) ? "Fizz" : String.valueOf(number) ;
