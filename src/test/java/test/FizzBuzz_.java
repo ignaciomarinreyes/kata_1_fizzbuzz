@@ -29,8 +29,9 @@ public class FizzBuzz_ {
     }
 
     @Test
-    public void should_return_buzz_when_it_is_5() {
+    public void should_return_buzz_when_it_is_multiple_of_5() {
         assertThat(fizzBuzz.of(5)).isEqualTo("Buzz");
+        assertThat(fizzBuzz.of(10)).isEqualTo("Buzz");
     }
 
     public class FizzBuzz {
