@@ -42,7 +42,12 @@ public class FizzBuzz_ {
 
     public class FizzBuzz {
         public String of(int number) {
+            if (isMultipleOfFifhteen(number)) return "FizzBuzz";
             return isMultipleOfFive(number) ? "Buzz": isMultipleOfThree(number) ? "Fizz" : String.valueOf(number) ;
+        }
+
+        private boolean isMultipleOfFifhteen(int number) {
+            return number % 15 == 0;
         }
 
         private boolean isMultipleOfFive(int number) {
