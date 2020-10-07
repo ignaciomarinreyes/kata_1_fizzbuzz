@@ -35,7 +35,7 @@ public class FizzBuzz_ {
 
     public class FizzBuzz {
         public String of(int number) {
-            return number != 5 ? number != 3 ? String.valueOf(number) : "Fizz" : "Buzz";
+            return number != 5 ? number % 3 != 0 ? String.valueOf(number) : "Fizz" : "Buzz";
         }
     }
 }
