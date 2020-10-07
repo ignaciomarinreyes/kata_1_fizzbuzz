@@ -16,7 +16,7 @@ public class FizzBuzz_ {
 
     private class FizzBuzz {
         public String get(int number) {
-            return null;
+            return "1";
         }
     }
 }
