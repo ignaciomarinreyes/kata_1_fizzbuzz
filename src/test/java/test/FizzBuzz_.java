@@ -27,6 +27,11 @@ public class FizzBuzz_ {
         assertThat(fizzBuzz.of(3)).isEqualTo("Fizz");
     }
 
+    @Test
+    public void should_return_buzz_when_it_is_5() {
+        assertThat(fizzBuzz.of(5)).isEqualTo("Buzz");
+    }
+
     public class FizzBuzz {
         public String of(int number) {
             return number != 3 ? String.valueOf(number) : "Fizz";
