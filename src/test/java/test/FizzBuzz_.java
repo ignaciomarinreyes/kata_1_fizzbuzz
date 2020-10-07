@@ -34,6 +34,7 @@ public class FizzBuzz_ {
 
     public class FizzBuzz {
         public String of(int number) {
+            if (number == 5) return "Buzz";
             return number != 3 ? String.valueOf(number) : "Fizz";
         }
     }
