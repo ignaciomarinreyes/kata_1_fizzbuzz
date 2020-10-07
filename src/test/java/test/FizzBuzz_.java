@@ -35,7 +35,11 @@ public class FizzBuzz_ {
 
     public class FizzBuzz {
         public String of(int number) {
-            return number != 5 ? number % 3 != 0 ? String.valueOf(number) : "Fizz" : "Buzz";
+            return number != 5 ? isMultipleOfThree(number) ? "Fizz" : String.valueOf(number) : "Buzz";
+        }
+
+        private boolean isMultipleOfThree(int number) {
+            return number % 3 == 0;
         }
     }
 }
