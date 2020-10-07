@@ -23,8 +23,9 @@ public class FizzBuzz_ {
     }
 
     @Test
-    public void should_return_fizz_when_it_is_3() {
+    public void should_return_fizz_when_it_is_multiple_of_3() {
         assertThat(fizzBuzz.of(3)).isEqualTo("Fizz");
+        assertThat(fizzBuzz.of(6)).isEqualTo("Fizz");
     }
 
     @Test
